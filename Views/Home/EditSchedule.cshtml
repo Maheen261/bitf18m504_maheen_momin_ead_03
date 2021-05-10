@@ -1,0 +1,37 @@
+﻿@model Ass_3.Models.RailwayData
+
+@{
+    ViewBag.Title = "EditSchedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Edit Schedule</h2>
+<form action="/Home/EditS/@Model.Id" method="post">
+  
+    Name :
+    <input type="text" name="tname" value="@Model.Name" />
+    <br />
+
+    Arrival Time :
+    <input type="text" name="atime" value="@Model.Arrival" />
+    <br />
+
+    Departure Time :
+    <input type="text" name="dtime" value="@Model.Departure" />
+    <br />
+
+    Seats :
+    <input type="text" name="tseat" value="@Model.Seats" />
+    <br />
+
+    Price :
+    <input type="text" name="tprice" value="@Model.Price" />
+    <br />
+
+    Class :
+    <input type="text" name="tclass" value="@Model.Classes" />
+    <br />
+
+    <input type="submit" value="Edit" />
+</form>

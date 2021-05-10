@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RailwayTicketingSystem" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\RailwayTicketingSystem.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="RailwayTicketingSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.RailwayData" Member="RailwayDatas">
+    <Type Name="RailwayData">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="Arrival" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="Departure" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="Seats" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Classes" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

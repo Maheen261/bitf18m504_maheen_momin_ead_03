@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Ass_3.Models.RailwayData>
+
+@{
+    ViewBag.Title = "ViewSchedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br/><br />
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Arrival</th>
+        <th>Departure</th>
+        <th>Price</th>
+        <th>Class</th>
+        <th>Seats</th>
+    </tr>
+  
+    @foreach (var rts in Model)
+     {
+        <tr>
+            <td>@rts.Id</td>
+            <td>@rts.Name</td>
+            <td>@rts.Arrival</td>
+            <td>@rts.Departure</td>
+            <td>@rts.Price</td>
+            <td>@rts.Classes</td>
+            <td>@rts.Seats</td>
+
+            <td>
+                <a href="/Home/EditSchedule/@rts.Id">Edit</a>
+            </td>
+        </tr>
+     }
+</table>
